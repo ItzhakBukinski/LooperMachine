@@ -1,0 +1,8 @@
+.loop-pads-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 270px;
+    gap: 30px;
+}

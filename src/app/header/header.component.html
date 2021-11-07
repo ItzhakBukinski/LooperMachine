@@ -1,0 +1,31 @@
+<nav class="navbar navbar-dark bg-dark">
+  <div class="containe">
+    <img src="assets/images/g.png"
+    width="50">
+    <img src="assets/images/r.png"
+        width="50">
+        <button class="btn btn-dark btn-circle btn-xl"
+        (click)="onStartPlaying()"
+        [disabled]="playing">
+          <img src="assets/images/o_play.png"
+               width="55">
+        
+        </button>
+        <button class="btn btn-dark"
+        (click)="onStop()"
+        [disabled]="!playing">
+          <img src="assets/images/o_pause.png"
+               width="55">
+              
+        </button>
+        <img src="assets/images/v.png"
+               width="50">
+               <img src="assets/images/e.png"
+               width="50">
+               <button class="btn btn-dark">
+                <img src="assets/images/o_record.png"
+                     width="55">
+              </button>
+       
+    </div>
+</nav>

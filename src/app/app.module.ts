@@ -1,16 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { PadComponent } from './pad/pad.component';
+import { HeaderComponent } from './header/header.component';
+import { LoopPadsComponent } from './loop-pads/loop-pads.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PadComponent,
+    HeaderComponent,
+    LoopPadsComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [HeaderComponent],
+  bootstrap: [AppComponent],
+ 
 })
 export class AppModule { }

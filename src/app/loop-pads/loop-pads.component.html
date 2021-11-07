@@ -1,0 +1,7 @@
+<div class="loop-pads-container">
+    <div *ngFor="let pad of pads">
+        <app-pad [pad]='pad'
+                 (onClicked)="onClicked($event)">
+        </app-pad>
+    </div>
+</div>
