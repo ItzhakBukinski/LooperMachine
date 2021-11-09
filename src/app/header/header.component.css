@@ -1,0 +1,22 @@
+.navbar{
+  
+    width: auto;
+    
+  }
+
+  button.btn {
+    width: auto;
+    height: auto;
+    padding: 0;
+}
+
+.containe {
+    display: flex;
+    align-items: center;
+}
+
+.containe img {
+    --dimentions: 60px; width: var(--dimentions);
+    height: var(--dimentions);
+    object-fit: contain;
+}
