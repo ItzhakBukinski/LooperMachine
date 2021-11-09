@@ -8,26 +8,19 @@ import { Pad } from './pad.model';
   styleUrls: ['./pad.component.css']
 })
 export class PadComponent implements OnInit {
-  @Input() pad: Pad = new Pad("","",false)
-  clicked = false;
-  @Output() onClicked = new EventEmitter<ClickedPad>()
-  
-
-  constructor() {
-  }
+  @Input() pad: Pad = new Pad("", "", false)
+  @Output() onClicked: EventEmitter<ClickedPad> = new EventEmitter<ClickedPad>()
+  clicked: boolean = false;
 
   ngOnInit(): void {
   }
+
   onClick() {
     this.clicked = !this.clicked
-    if (this.clicked) {
-      this.onClicked.emit(new ClickedPad(this.pad.name,true))
-    
-    } else {
-      this.onClicked.emit(new ClickedPad(this.pad.name,false))
-    
-    }
-   
+    this.clicked ?
+      this.onClicked.emit(new ClickedPad(this.pad.name, true))
+      :
+      this.onClicked.emit(new ClickedPad(this.pad.name, false))
   }
 
   getStatusColor() {

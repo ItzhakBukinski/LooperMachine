@@ -7,8 +7,8 @@ import { Subject } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title='looperMachine'
-  playing:Subject<boolean>=new Subject<boolean>()
+  title = 'looperMachine'
+  playing: Subject<boolean> = new Subject<boolean>()
 
   onPlaying(status: boolean) {
     this.playing.next(status)

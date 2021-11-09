@@ -1,0 +1,17 @@
+#container{
+    width:99.2vw;
+    height: 89vh;
+    display: grid;
+    place-items: center;
+    background-color: wheat;
+
+}
+
+#circle{
+    display: grid;
+    place-items: center;
+    width: 600px;
+    height: 600px;
+    background-color: rgb(160, 155, 155);
+    border-radius: 50%;
+}

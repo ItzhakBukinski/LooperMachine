@@ -1,0 +1,22 @@
+<div class="audio">
+    <button *ngIf="!recording"
+            class="btn btn-dark"
+            (click)="initiateRecording()"
+            [disabled]="finished">
+        <img src="assets/images/o_record.png"
+             width="55">
+    </button>
+    <button *ngIf="recording"
+            class="btn btn-dark"
+            style="background-color: red;"
+            (click)="stopRecording()"
+            [disabled]="finished">
+        <img src="assets/images/o_record.png"
+             width="55">
+    </button>
+    <audio controls=""
+           *ngIf="url">
+        <source [src]="sanitize(url)"
+                type="audio/wav">
+    </audio>
+</div>

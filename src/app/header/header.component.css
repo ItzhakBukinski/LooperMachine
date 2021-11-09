@@ -1,22 +1,15 @@
-.navbar{
-  
-    width: auto;
-    
-  }
-
-  button.btn {
-    width: auto;
-    height: auto;
-    padding: 0;
-}
-
-.containe {
+.container {
     display: flex;
     align-items: center;
 }
 
-.containe img {
-    --dimentions: 60px; width: var(--dimentions);
+.container .img {
+    --dimentions: 60px;
+    width: var(--dimentions);
     height: var(--dimentions);
     object-fit: contain;
 }
+
+.icon { position: relative; }
+.icon .img { display: block; }
+.icon .bi-caret-right-fill { position: absolute; bottom:17px; left:19px; }

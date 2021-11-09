@@ -1,3 +1,6 @@
 <app-header (playingStatus)="onPlaying($event)"></app-header>
-
-<app-loop-pads [playing]="playing.asObservable()"></app-loop-pads>
+<div id="container">
+    <div id="circle">
+        <app-loop-pads [playing]="playing.asObservable()"></app-loop-pads>
+    </div>
+</div>
